@@ -16,5 +16,18 @@ function appendNewTweet(tweet) {
 										<div class="tweet-time"><small>${new Date(tweet.time).toLocaleString()}</small></div>
 									</div>`;
 
-	$("#renderTweets").prepend(newTweet);
+	$("#render-tweets").prepend(newTweet);
 }
+
+$("#submit-tweet").click(function () {
+	$.ajax({
+		type: 'POST',
+		url: '/tweet',
+		contentType: 'application/json',
+		data: JSON.stringify({tweet: $("#new-tweet").val()}),
+		success: function(data) {
+			appendNewTweet(data);
+			$("#new-tweet").val('');
+		}
+	})
+});

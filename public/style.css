@@ -4,6 +4,15 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+button {
+  padding: 10px 15px;
+  font-size: 18px;
+}
+input[type="text"] {
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 18px;
+}
 .container {
 	padding: 10px;
 }
@@ -19,9 +28,12 @@ body {
 .tweet-time {
 	color: #ccc;
 }
-#renderTweets {
+#render-tweets {
 	padding: 10px;
 }
 .main-head {
 	padding: 0 20px;
+}
+.tweet-form {
+	padding: 20px;
 }
