@@ -1,0 +1,27 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+.container {
+	padding: 10px;
+}
+.tweet-wrapper {
+	padding: 5px;
+	border: 1px solid #f2f2f2;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+.tweet-text {
+	color: #333;
+}
+.tweet-time {
+	color: #ccc;
+}
+#renderTweets {
+	padding: 10px;
+}
+.main-head {
+	padding: 0 20px;
+}
